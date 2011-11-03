@@ -1,3 +1,9 @@
+# revision 24093
+# category Package
+# catalog-ctan /fonts/dingbat
+# catalog-date 2011-04-10 19:43:45 +0200
+# catalog-license lppl
+# catalog-version 1.0
 Name:		texlive-dingbat
 Version:	1.0
 Release:	1
@@ -52,6 +58,7 @@ niceframe fonts bundle.
 #- source
 %doc %{_texmfdistdir}/source/fonts/dingbat/dingbat.dtx
 %doc %{_texmfdistdir}/source/fonts/dingbat/dingbat.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -62,3 +69,5 @@ niceframe fonts bundle.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
