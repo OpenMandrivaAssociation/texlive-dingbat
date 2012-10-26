@@ -1,12 +1,12 @@
-# revision 24093
+# revision 27918
 # category Package
 # catalog-ctan /fonts/dingbat
-# catalog-date 2011-04-10 19:43:45 +0200
+# catalog-date 2012-06-28 23:28:54 +0200
 # catalog-license lppl
 # catalog-version 1.0
 Name:		texlive-dingbat
 Version:	1.0
-Release:	2
+Release:	3
 Summary:	Two dingbat symbol fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/dingbat
@@ -21,9 +21,9 @@ Requires(post):	texlive-kpathsea
 
 %description
 The fonts (ark10 and dingbat) are specified in Metafont;
-support macros are provided for use in plain TeX and in LaTeX.
-An Adobe Type 1 version of the fonts is available in the
-niceframe fonts bundle.
+support macros are provided for use in LaTeX. An Adobe Type 1
+version of the fonts is available in the niceframe fonts
+bundle.
 
 %post
     %{_sbindir}/texlive.post
@@ -46,8 +46,8 @@ niceframe fonts bundle.
 %doc %{_texmfdistdir}/doc/fonts/dingbat/dingbat.pdf
 %doc %{_texmfdistdir}/doc/fonts/dingbat/dingbat.tex
 #- source
-%doc %{_texmfdistdir}/source/fonts/dingbat/dingbat.dtx
-%doc %{_texmfdistdir}/source/fonts/dingbat/dingbat.ins
+%doc %{_texmfdistdir}/source/latex/dingbat/dingbat.dtx
+%doc %{_texmfdistdir}/source/latex/dingbat/dingbat.ins
 
 #-----------------------------------------------------------------------
 %prep
