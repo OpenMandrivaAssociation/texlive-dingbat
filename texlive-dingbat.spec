@@ -1,12 +1,12 @@
-# revision 27918
+# revision 24093
 # category Package
 # catalog-ctan /fonts/dingbat
-# catalog-date 2012-06-28 23:28:54 +0200
+# catalog-date 2011-04-10 19:43:45 +0200
 # catalog-license lppl
 # catalog-version 1.0
 Name:		texlive-dingbat
 Version:	1.0
-Release:	3
+Release:	2
 Summary:	Two dingbat symbol fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/dingbat
@@ -21,9 +21,9 @@ Requires(post):	texlive-kpathsea
 
 %description
 The fonts (ark10 and dingbat) are specified in Metafont;
-support macros are provided for use in LaTeX. An Adobe Type 1
-version of the fonts is available in the niceframe fonts
-bundle.
+support macros are provided for use in plain TeX and in LaTeX.
+An Adobe Type 1 version of the fonts is available in the
+niceframe fonts bundle.
 
 %post
     %{_sbindir}/texlive.post
@@ -46,8 +46,8 @@ bundle.
 %doc %{_texmfdistdir}/doc/fonts/dingbat/dingbat.pdf
 %doc %{_texmfdistdir}/doc/fonts/dingbat/dingbat.tex
 #- source
-%doc %{_texmfdistdir}/source/latex/dingbat/dingbat.dtx
-%doc %{_texmfdistdir}/source/latex/dingbat/dingbat.ins
+%doc %{_texmfdistdir}/source/fonts/dingbat/dingbat.dtx
+%doc %{_texmfdistdir}/source/fonts/dingbat/dingbat.ins
 
 #-----------------------------------------------------------------------
 %prep
@@ -58,3 +58,17 @@ bundle.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-2
++ Revision: 750961
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.0-1
++ Revision: 718234
+- texlive-dingbat
+- texlive-dingbat
+- texlive-dingbat
+- texlive-dingbat
+
