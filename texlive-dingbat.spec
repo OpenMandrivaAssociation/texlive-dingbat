@@ -6,7 +6,7 @@
 # catalog-version 1.0
 Name:		texlive-dingbat
 Version:	1.0
-Release:	10
+Release:	11
 Summary:	Two dingbat symbol fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/dingbat
